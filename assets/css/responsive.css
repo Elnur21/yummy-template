@@ -2,4 +2,7 @@
     .navbar-collapse {
       order: 3;
     }
+    .active::after,.nav-item::after{
+        display: none;
+    }
   }
