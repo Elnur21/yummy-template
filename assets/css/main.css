@@ -1,0 +1,62 @@
+/* header start  */
+header h1,
+li {
+  font-family: "Inter", sans-serif;
+}
+header .btn-danger {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.nav-item{
+    position: relative;
+}
+.active::after,.nav-item::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 0%;
+    height: 2px;
+    background: #ff0000;
+    transition: 0.5s;
+}
+.active::after,.nav-item:hover::after{
+    width: 90%;
+}
+.dropend{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+.dropend:hover .submenu{
+    display: block;
+}
+/* header end  */
+/* loading spinner start  */
+.spinner-parent {
+  height: 100vh;
+  animation: Spinner 1s ease-in-out forwards;
+}
+.spinner-parent > div {
+  width: 45px;
+  height: 45px;
+}
+.spinner-parent > div > div {
+  width: 25px;
+  height: 25px;
+}
+@keyframes Spinner {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+/* loading spinner end  */
+
