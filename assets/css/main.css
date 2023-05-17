@@ -3,12 +3,9 @@ header h1,
 li {
   font-family: "Inter", sans-serif;
 }
-header .btn-danger {
+.btn-danger {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-}
-.nav-item{
-    position: relative;
 }
 .active::after,.nav-item::after{
     content:"";
@@ -23,18 +20,11 @@ header .btn-danger {
 .active::after,.nav-item:hover::after{
     width: 90%;
 }
-.dropend{
-    position: relative;
-}
-.submenu{
-    position: absolute;
-    left: 100%;
-    top: 0;
-}
 .dropend:hover .submenu{
     display: block;
 }
 /* header end  */
+
 /* loading spinner start  */
 .spinner-parent {
   height: 100vh;
@@ -60,3 +50,17 @@ header .btn-danger {
 }
 /* loading spinner end  */
 
+/* banner start */
+.banner{
+    background-color: rgb(238,238,238);
+}
+.banner h2{
+    font-family: 'Amatic SC', cursive;
+}
+.banner p,.watch-button{
+    font-family: "Open Sans", sans-serif;
+}
+.banner img{
+    width: 100%
+}
+/* banner end */

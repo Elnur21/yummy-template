@@ -52,25 +52,25 @@
             id="navbarNavDropdown"
           >
             <ul class="navbar-nav fw-bold gap-3">
-              <li class="nav-item">
+              <li class="nav-item position-relative">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item position-relative">
                 <a class="nav-link" href="#">About</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item position-relative">
                 <a class="nav-link" href="#">Menu</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item position-relative">
                 <a class="nav-link" href="#">Events</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item position-relative">
                 <a class="nav-link" href="#">Chefs</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item position-relative">
                 <a class="nav-link" href="#">Gallery</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item position-relative dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -88,21 +88,30 @@
                   <li>
                     <a class="dropdown-item py-3" href="#"> Dropdown item 1 </a>
                   </li>
-                  <li class="dropend">
-                    <a class="dropdown-item py-3 dropdown-toggle"
-                    href="#"
-                    id="subDropDown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                      Dropdown item 2 
+                  <li class="dropend position-relative">
+                    <a
+                      class="dropdown-item py-3 dropdown-toggle"
+                      href="#"
+                      id="subDropDown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dropdown item 2
                     </a>
-                    <ul class="submenu shadow rounded dropdown-menu" aria-labelledby="subDropDown">
+                    <ul
+                      class="submenu shadow rounded dropdown-menu position-absolute top-0 start-100"
+                      aria-labelledby="subDropDown"
+                    >
                       <li>
-                        <a class="dropdown-item py-3" href="#">Submenu item 1</a>
+                        <a class="dropdown-item py-3" href="#"
+                          >Submenu item 1</a
+                        >
                       </li>
                       <li>
-                        <a class="dropdown-item py-3" href="#">Submenu item 2</a>
+                        <a class="dropdown-item py-3" href="#"
+                          >Submenu item 2</a
+                        >
                       </li>
                       <li>
                         <a class="dropdown-item py-3" href="#"
@@ -110,10 +119,14 @@
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item py-3" href="#">Submenu item 4</a>
+                        <a class="dropdown-item py-3" href="#"
+                          >Submenu item 4</a
+                        >
                       </li>
                       <li>
-                        <a class="dropdown-item py-3" href="#">Submenu item 5</a>
+                        <a class="dropdown-item py-3" href="#"
+                          >Submenu item 5</a
+                        >
                       </li>
                     </ul>
                   </li>
@@ -125,7 +138,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <li class="nav-item position-relative">
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
@@ -150,6 +163,44 @@
       </nav>
     </header>
     <!-- header end -->
+    <!-- banner start -->
+    <section class="banner py-5">
+      <div class="container py-4">
+        <div class="row flex-lg-row flex-column-reverse align-items-center justify-content-lg-between">
+          <div class="col-lg-5 col-12 text-lg-start text-center mt-lg-0 mt-5">
+            <div class="w-100 d-flex justify-content-center justify-content-lg-start">
+                <h2 class="fw-bold display-3 w-75">
+                    Enjoy Your Healthy Delicious Food
+                  </h2>
+            </div>
+            <p class="text-dark my-4">
+              Sed autem laudantium dolores. Voluptatem itaque ea consequatur
+              eveniet. Eum quas beatae cumque eum quaerat.
+            </p>
+            <div class="buttons d-flex gap-4 align-items-center justify-content-center justify-content-lg-start">
+              <a class="btn btn-danger rounded-pill px-5 py-3" href=""
+                >Book a Table</a
+              >
+              <a
+                class="text-decoration-none text-dark fw-bold watch-button d-flex align-items-center"
+                href="#"
+                ><i class="fa-regular fa-circle-play text-danger fs-2 me-2"></i>
+                Watch Video</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-5 col-12">
+            <img src="./assets/imgs/banner.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <script
+      src="https://kit.fontawesome.com/c5b29734f8.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
