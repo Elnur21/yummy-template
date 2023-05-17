@@ -1,4 +1,7 @@
 /* header start  */
+header{
+  z-index: 10;
+}
 header h1,
 li {
   font-family: "Inter", sans-serif;
@@ -211,5 +214,10 @@ li {
 .counts .text-white{
   font-family: "Open Sans", sans-serif;
 }
-
 /* counts end */
+
+/* menu start */
+.menu{
+  font-family: "Inter", sans-serif;
+}
+/* menu end */
