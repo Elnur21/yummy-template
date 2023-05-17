@@ -1,4 +1,7 @@
 /* header start  */
+header{
+  z-index: 10;
+}
 header h1,
 li {
   font-family: "Inter", sans-serif;
