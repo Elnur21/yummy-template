@@ -7,21 +7,23 @@ li {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
-.active::after,.nav-item::after{
-    content:"";
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    width: 0%;
-    height: 2px;
-    background: #ff0000;
-    transition: 0.5s;
+.active::after,
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 0%;
+  height: 2px;
+  background: #ff0000;
+  transition: 0.5s;
 }
-.active::after,.nav-item:hover::after{
-    width: 90%;
+.active::after,
+.nav-item:hover::after {
+  width: 90%;
 }
-.dropend:hover .submenu{
-    display: block;
+.dropend:hover .submenu {
+  display: block;
 }
 /* header end  */
 
@@ -51,16 +53,43 @@ li {
 /* loading spinner end  */
 
 /* banner start */
-.banner{
-    background-color: rgb(238,238,238);
+.banner {
+  background-color: rgb(238, 238, 238);
 }
-.banner h2{
-    font-family: 'Amatic SC', cursive;
+.banner h2 {
+  font-family: "Amatic SC", cursive;
 }
-.banner p,.watch-button{
-    font-family: "Open Sans", sans-serif;
+.banner p,
+.watch-button {
+  font-family: "Open Sans", sans-serif;
 }
-.banner img{
-    width: 100%
+.banner img {
+  width: 100%;
+  animation: BigToSmall 0.5s 1s ease-in-out forwards;
+  opacity: 0;
+}
+.banner h2,
+.banner p,
+.buttons {
+  animation: DpwnToUp 0.5s 1s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes DpwnToUp {
+  0% {
+    transform: translateY(60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes BigToSmall {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
 }
 /* banner end */
