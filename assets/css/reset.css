@@ -1,3 +1,6 @@
 ul.fw-bold{
     font-weight: 600 !important;
 }
+.opacity-50{
+    opacity: .5 !important;
+}

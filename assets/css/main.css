@@ -56,15 +56,14 @@ li {
 .banner {
   background-color: rgb(238, 238, 238);
 }
-.banner h2 {
+.banner h2,.about-header h2 {
   font-family: "Amatic SC", cursive;
 }
 .banner p,
-.watch-button {
+.watch-button,.img-body {
   font-family: "Open Sans", sans-serif;
 }
 .banner img {
-  width: 100%;
   animation: BigToSmall 0.5s 1s ease-in-out forwards;
   opacity: 0;
 }
@@ -93,3 +92,57 @@ li {
   }
 }
 /* banner end */
+
+/* about start */
+.about{
+  font-family: "Open Sans", sans-serif;
+}
+.about-header p{
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.img-body{
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
+}
+.about-body .col-lg-7{
+  height: 704px;
+}
+.about ul li::marker {
+  font-size: 1.5rem;
+  color: red;
+  content: "✓";
+}
+.video>div>div {
+  width: 90px;
+  height: 90px
+}
+.video .playIcon{
+  width: 60px;
+  height: 60px;
+  cursor:pointer;
+  transition: 0.5s;
+  overflow: hidden !important;
+}
+.video .playIcon:hover,.video>div>div:hover + .playIcon{
+  width: 90px;
+  height: 90px;
+}
+.video .playIcon:hover i,.video>div>div:hover + .playIcon i{
+  animation: PlayIcon 0.5s ease-in-out forwards;
+}
+@keyframes PlayIcon {
+  0%{
+    transform: scale(1.0)
+  }
+  50%{
+    transform: scale(6.0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
+/* about end */
