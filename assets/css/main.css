@@ -53,9 +53,6 @@ li {
 /* loading spinner end  */
 
 /* banner start */
-.banner {
-  background-color: rgb(238, 238, 238);
-}
 .banner h2,.about-header h2 {
   font-family: "Amatic SC", cursive;
 }
@@ -148,9 +145,6 @@ li {
 /* about end */
 
 /* information start */
-.information{
-  background-color: rgb(238, 238, 238)
-}
 .information h3, .information h4{
   font-family: "Inter", sans-serif;
 }
@@ -211,5 +205,23 @@ li {
 .counts .text-white{
   font-family: "Open Sans", sans-serif;
 }
-
 /* counts end */
+
+/* testimonials start */
+.carousel-inner{
+  font-family: "Inter", sans-serif;
+}
+.description{
+  font-family: "Open Sans", sans-serif;
+}
+.carousel-indicators .active::after,.carousel-item.active::after{
+  width: 0;
+}
+.carousel-indicators button{
+  width: 12px !important;
+  height: 12px !important;
+}
+.carousel-indicators .active{
+  background-color: #ff0000 !important;
+}
+/* testimonials end */
