@@ -18,7 +18,7 @@ li {
   left: 5%;
   width: 0%;
   height: 2px;
-  background:  rgb(208,67,18);
+  background: rgb(208, 67, 18);
   transition: 0.5s;
 }
 .active::after,
@@ -31,7 +31,7 @@ li {
 /* header end  */
 
 /* up button start */
-.up-button{
+.up-button {
   z-index: 1000;
 }
 /* up button end */
@@ -70,6 +70,12 @@ li {
 .watch-button,
 .img-body {
   font-family: "Open Sans", sans-serif;
+}
+.watch-button{
+  transition: 0.5s;
+}
+.watch-button:hover{
+  color:  rgb(208,67,18) !important;
 }
 .banner img {
   animation: BigToSmall 0.5s 1s ease-in-out forwards;
@@ -184,7 +190,7 @@ li {
   content: "";
   width: 64px;
   height: 64px;
-  background-color:  rgb(208,67,18);
+  background-color: rgb(208, 67, 18);
   opacity: 0.1;
   position: absolute;
   right: calc(50% - 32px);
@@ -245,13 +251,13 @@ li {
   height: 12px !important;
 }
 .carousel-indicators .active {
-  background-color:  rgb(208,67,18) !important;
+  background-color: rgb(208, 67, 18) !important;
 }
 /* testimonials end */
 
 /* events start */
 .swiper-pagination-bullet {
-  background-color:  rgb(208,67,18);
+  background-color: rgb(208, 67, 18);
   width: 12px;
   height: 12px;
 }
@@ -307,7 +313,7 @@ top
 .gallery-swipper .swiper-slide-active {
   transform: scale(1.3);
   padding: 5px;
-  border: 6px solid  rgb(208,67,18);
+  border: 6px solid rgb(208, 67, 18);
   position: relative;
   z-index: 10;
   background-color: white;
