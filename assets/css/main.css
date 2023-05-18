@@ -233,6 +233,13 @@ li {
 .menu {
   font-family: "Inter", sans-serif;
 }
+
+.menu .active,.menu li a:hover{
+  color: rgb(208, 67, 18) !important;
+}
+.menu .active::after{
+  display: none;
+}
 /* menu end */
 
 /* testimonials start */
