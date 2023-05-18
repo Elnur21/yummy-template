@@ -307,3 +307,13 @@ top
   background-color: white;
 }
 /* gallery end */
+
+/* contact start */
+.contact h4{
+  font-family: "Inter", sans-serif;
+}
+.contact p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+/* contact end */
