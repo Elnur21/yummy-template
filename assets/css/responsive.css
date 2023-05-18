@@ -1,22 +1,24 @@
-@media only screen and (max-width:1400px) {
-  .about-body .col-lg-7{
+@media only screen and (max-width: 1400px) {
+  .about-body .col-lg-7 {
     height: 768px;
   }
 }
-@media only screen and (max-width:1200px) {
-  .about-body .col-lg-7{
+@media only screen and (max-width: 1200px) {
+  .about-body .col-lg-7 {
     height: 735px;
   }
 }
 
 @media only screen and (max-width: 992px) {
-    .navbar-collapse {
-      order: 3;
-    }
-    .active::after,.nav-item::after{
-        display: none;
-    }
-    .contact .ps-4, .contact .pe-4{
-      padding: 0 !important;
-    }
+  .navbar-collapse {
+    order: 3;
   }
+  .active::after,
+  .nav-item::after {
+    display: none;
+  }
+  .contact .ps-4,
+  .contact .pe-4 {
+    padding: 0 !important;
+  }
+}
