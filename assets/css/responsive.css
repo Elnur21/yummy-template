@@ -16,4 +16,7 @@
     .active::after,.nav-item::after{
         display: none;
     }
+    .contact .ps-4, .contact .pe-4{
+      padding: 0 !important;
+    }
   }
