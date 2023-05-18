@@ -224,4 +224,10 @@ footer h5{
 footer p{
   font-size: 14px;
 }
+.copy-write span{
+  font-size: 13px;
+}
+.copy-write a{
+  font-weight: 500;
+}
 /* footer end */
