@@ -1,6 +1,10 @@
-ul.fw-bold{
-    font-weight: 600 !important;
+ul.fw-bold {
+  font-weight: 600 !important;
 }
-.opacity-50{
-    opacity: .5 !important;
+.opacity-50 {
+  opacity: 0.5 !important;
+}
+.form-control:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
 }
