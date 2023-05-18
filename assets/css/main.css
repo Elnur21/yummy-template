@@ -214,6 +214,7 @@ li {
 .counts .text-white {
   font-family: "Open Sans", sans-serif;
 }
+
 /* counts end */
 
 /* menu start */
@@ -246,16 +247,16 @@ li {
 .swiper-pagination-bullet {
   background-color: #ff0000;
   width: 12px;
-  height: 12px
+  height: 12px;
 }
-.swiper-slide{
+.mySwiper .swiper-slide {
   height: 70vh;
   font-family: "Open Sans", sans-serif;
 }
-.swiper-slide h3{
+.swiper-slide h3 {
   font-family: "Inter", sans-serif;
 }
-.swiper-slide::after{
+.mySwiper .swiper-slide::after {
   content: "";
   position: absolute;
   top: 0;
@@ -265,34 +266,72 @@ li {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.card-body{
+.card-body {
   z-index: 10;
 }
 /* events end */
 top
 /* chefs start */
-.chefs article.card{
+.chefs article.card {
   font-family: "Open Sans", sans-serif;
   transition: 0.5s transform;
 }
-.animated-chef{
-  transition: 0.5s 
+.animated-chef {
+  transition: 0.5s;
 }
-.chefs .card h3{
+.chefs .card h3 {
   font-family: "Inter", sans-serif;
 }
-.chefs .card p{
+.chefs .card p {
   font-size: 14px;
 }
-.chef-icons{
- transform: translateX(200%);
- transition: 0.3s 0.3s !important;
+.chef-icons {
+  transform: translateX(200%);
+  transition: 0.3s 0.3s !important;
 }
-.chefs .card:hover{
+.chefs .card:hover {
   transform: scale(1.1);
 }
-.chefs .card:hover .chef-icons{
+.chefs .card:hover .chef-icons {
   transform: translateX(0);
 }
 /* chefs end */
 
+/* galery start */
+.gallery-swipper .swiper-slide-active {
+  transform: scale(1.3);
+  padding: 5px;
+  border: 6px solid #ff0000;
+  position: relative;
+  z-index: 10;
+  background-color: white;
+}
+/* gallery end */
+
+/* contact start */
+.contact h4 {
+  font-family: "Inter", sans-serif;
+}
+.contact p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+/* contact end */
+
+/* footer start */
+footer {
+  font-family: "Open Sans", sans-serif;
+}
+footer h5 {
+  font-family: "Inter", sans-serif;
+}
+footer p {
+  font-size: 14px;
+}
+.copy-write span {
+  font-size: 13px;
+}
+.copy-write a {
+  font-weight: 500;
+}
+/* footer end */
