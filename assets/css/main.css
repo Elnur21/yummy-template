@@ -56,6 +56,7 @@ li {
 /* loading spinner end  */
 
 /* banner start */
+
 .banner h2,
 .about-header h2 {
   font-family: "Amatic SC", cursive;
@@ -269,3 +270,30 @@ li {
   z-index: 10;
 }
 /* events end */
+top
+/* chefs start */
+.chefs article.card{
+  font-family: "Open Sans", sans-serif;
+  transition: 0.5s transform;
+}
+.animated-chef{
+  transition: 0.5s 
+}
+.chefs .card h3{
+  font-family: "Inter", sans-serif;
+}
+.chefs .card p{
+  font-size: 14px;
+}
+.chef-icons{
+ transform: translateX(200%);
+ transition: 0.3s 0.3s !important;
+}
+.chefs .card:hover{
+  transform: scale(1.1);
+}
+.chefs .card:hover .chef-icons{
+  transform: translateX(0);
+}
+/* chefs end */
+
