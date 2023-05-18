@@ -4,3 +4,6 @@
 .bg-grey{
     background-color: rgb(238, 238, 238);
 }
+.opacity-60 {
+  opacity: 0.6;
+}
