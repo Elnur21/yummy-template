@@ -1,4 +1,7 @@
 /* header start  */
+header {
+  z-index: 10;
+}
 header h1,
 li {
   font-family: "Inter", sans-serif;
@@ -53,11 +56,14 @@ li {
 /* loading spinner end  */
 
 /* banner start */
-.banner h2,.about-header h2 {
+
+.banner h2,
+.about-header h2 {
   font-family: "Amatic SC", cursive;
 }
 .banner p,
-.watch-button,.img-body {
+.watch-button,
+.img-body {
   font-family: "Open Sans", sans-serif;
 }
 .banner img {
@@ -85,25 +91,25 @@ li {
   }
   100% {
     opacity: 1;
-    transform: scale(1.0);
+    transform: scale(1);
   }
 }
 /* banner end */
 
 /* about start */
-.about{
+.about {
   font-family: "Open Sans", sans-serif;
 }
-.about-header p{
+.about-header p {
   font-size: 13px;
   letter-spacing: 1px;
 }
-.img-body{
+.img-body {
   bottom: 10%;
   left: 10%;
   width: 80%;
 }
-.about-body .col-lg-7{
+.about-body .col-lg-7 {
   height: 704px;
 }
 .about ul li::marker {
@@ -111,48 +117,52 @@ li {
   color: red;
   content: "✓";
 }
-.video>div>div {
-  width: 90px;
-  height: 90px
-}
-.video .playIcon{
-  width: 60px;
-  height: 60px;
-  cursor:pointer;
-  transition: 0.5s;
-  overflow: hidden !important;
-}
-.video .playIcon:hover,.video>div>div:hover + .playIcon{
+.video > div > div {
   width: 90px;
   height: 90px;
 }
-.video .playIcon:hover i,.video>div>div:hover + .playIcon i{
+.video .playIcon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden !important;
+}
+.video .playIcon:hover,
+.video > div > div:hover + .playIcon {
+  width: 90px;
+  height: 90px;
+}
+.video .playIcon:hover i,
+.video > div > div:hover + .playIcon i {
   animation: PlayIcon 0.5s ease-in-out forwards;
 }
 @keyframes PlayIcon {
-  0%{
-    transform: scale(1.0)
+  0% {
+    transform: scale(1);
   }
-  50%{
-    transform: scale(6.0);
+  50% {
+    transform: scale(6);
     opacity: 0;
   }
-  100%{
-    transform: scale(1.0);
+  100% {
+    transform: scale(1);
     opacity: 1;
   }
 }
 /* about end */
 
 /* information start */
-.information h3, .information h4{
+.information h3,
+.information h4 {
   font-family: "Inter", sans-serif;
 }
-.information p, .information a{
+.information p,
+.information a {
   font-family: "Open Sans", sans-serif;
   overflow: hidden;
 }
-.information a::before{
+.information a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -162,10 +172,10 @@ li {
   background-color: white;
   opacity: 0.3;
 }
-.fa-signal{
+.fa-signal {
   top: 35%;
 }
-.information-icon::after{
+.information-icon::after {
   content: "";
   width: 64px;
   height: 64px;
@@ -176,22 +186,22 @@ li {
   bottom: calc(50% - 32px);
   border-radius: 50%;
 }
-.information article.bg-white{
+.information article.bg-white {
   transition: 0.5s;
 }
-.information article.bg-white:hover{
+.information article.bg-white:hover {
   transform: scale(1.1);
 }
 /* information end */
 
 /* counts start */
-.counts{
+.counts {
   font-family: "Inter", sans-serif;
   background-image: url(../imgs/stats-bg.jpg);
   background-attachment: fixed;
   z-index: 0;
 }
-.counts::before{
+.counts::before {
   content: "";
   position: absolute;
   top: 0;
@@ -202,8 +212,61 @@ li {
   height: 100%;
   z-index: -1;
 }
-.counts .text-white{
+.counts .text-white {
   font-family: "Open Sans", sans-serif;
 }
-
 /* counts end */
+
+/* menu start */
+.menu {
+  font-family: "Inter", sans-serif;
+}
+/* menu end */
+
+/* testimonials start */
+.carousel-inner {
+  font-family: "Inter", sans-serif;
+}
+.description {
+  font-family: "Open Sans", sans-serif;
+}
+.carousel-indicators .active::after,
+.carousel-item.active::after {
+  width: 0;
+}
+.carousel-indicators button {
+  width: 12px !important;
+  height: 12px !important;
+}
+.carousel-indicators .active {
+  background-color: #ff0000 !important;
+}
+/* testimonials end */
+
+/* events start */
+.swiper-pagination-bullet {
+  background-color: #ff0000;
+  width: 12px;
+  height: 12px
+}
+.swiper-slide{
+  height: 70vh;
+  font-family: "Open Sans", sans-serif;
+}
+.swiper-slide h3{
+  font-family: "Inter", sans-serif;
+}
+.swiper-slide::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.card-body{
+  z-index: 10;
+}
+/* events end */
