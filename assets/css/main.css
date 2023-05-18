@@ -249,14 +249,14 @@ li {
   width: 12px;
   height: 12px
 }
-.swiper-slide{
+.mySwiper .swiper-slide{
   height: 70vh;
   font-family: "Open Sans", sans-serif;
 }
 .swiper-slide h3{
   font-family: "Inter", sans-serif;
 }
-.swiper-slide::after{
+.mySwiper .swiper-slide::after{
   content: "";
   position: absolute;
   top: 0;
@@ -297,3 +297,13 @@ top
 }
 /* chefs end */
 
+/* galery start */
+.gallery-swipper .swiper-slide-active{
+  transform: scale(1.3);
+  padding: 5px;
+  border: 6px solid #ff0000;
+  position: relative;
+  z-index: 10;
+  background-color: white;
+}
+/* gallery end */
