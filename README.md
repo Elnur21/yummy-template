@@ -3,7 +3,7 @@
   <head>
 	</head>
 	<body>
-<h1 style="color:blue">Yummy template</h1>
+<h1>Yummy template</h1>
 Yummy is a visually appealing and modern Bootstrap template designed for restaurant and food-related websites. It is built using HTML, CSS, and Bootstrap, making it easy to customize and responsive across different devices.
 
 From the demo page, it seems that the Yummy template offers several key features commonly found in restaurant websites. These may include:
