@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <!-- BOotstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Fancybox CSS -->
+    <link
+      rel="stylesheet"
+      href="/fancybox/jquery.fancybox-1.3.4.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/component.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- spinner start -->
+    <div
+      class="spinner-parent d-flex justify-content-center align-items-center w-100 position-fixed top-0 bg-white"
+    >
+      <div
+        class="spinner-grow bg-transparent border border-danger border-4 d-flex justify-content-center align-items-center"
+        role="status"
+      >
+        <div
+          class="spinner-grow bg-transparent border border-danger border-4"
+          role="stats"
+        ></div>
+      </div>
+    </div>
+    <!-- spinner end -->
+    <div>
+      <a
+        href="#"
+        class="up-button position-fixed bottom-0 end-0 mb-3 me-3 bg-danger text-white fs-6 py-2 px-3 rounded-circle"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+    <!-- header start -->
+    <header class="py-3 position-sticky top-0 w-100 bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand text-dark" href="index.html">
+            <h1 class="text-capitalize fw-bold fs-3 m-0">
+              yummy<span class="text-danger">.</span>
+            </h1>
+          </a>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav fw-bold gap-3">
+              <li class="nav-item position-relative">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link" href="#Menu">Menu</a>
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link" href="#Events">Events</a>
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link" href="#Chefs">Chefs</a>
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link" href="#Gallery">Gallery</a>
+              </li>
+              <li class="nav-item position-relative dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Drop Down
+                </a>
+                <ul
+                  class="dropdown-menu shadow rounded"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item py-3" href="#"> Dropdown item 1 </a>
+                  </li>
+                  <li class="dropend position-relative">
+                    <a
+                      class="dropdown-item py-3 dropdown-toggle"
+                      href="#"
+                      id="subDropDown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dropdown item 2
+                    </a>
+                    <ul
+                      class="submenu shadow rounded dropdown-menu position-absolute top-0 start-100"
+                      aria-labelledby="subDropDown"
+                    >
+                      <li>
+                        <a class="dropdown-item py-3" href="#"
+                          >Submenu item 1</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item py-3" href="#"
+                          >Submenu item 2</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item py-3" href="#"
+                          >Submenu item 3
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item py-3" href="#"
+                          >Submenu item 4</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item py-3" href="#"
+                          >Submenu item 5</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-3" href="#"> Dropdown item 3 </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-3" href="#"> Dropdown item 4 </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item position-relative">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a
+              class="btn btn-danger rounded-pill px-4 py-2 me-2"
+              href="#BookForm"
+            >
+              Book a Table
+            </a>
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+    <!-- banner start -->
+    <section class="banner py-5 bg-grey">
+      <div class="container py-4">
+        <div
+          class="row flex-lg-row flex-column-reverse align-items-center justify-content-lg-between"
+        >
+          <div class="col-lg-5 col-12 text-lg-start text-center mt-lg-0 mt-5">
+            <div
+              class="w-100 d-flex justify-content-center justify-content-lg-start"
+            >
+              <h2 class="fw-bold display-3 w-75">
+                Enjoy Your Healthy Delicious Food
+              </h2>
+            </div>
+            <p class="text-muted my-4">
+              Sed autem laudantium dolores. Voluptatem itaque ea consequatur
+              eveniet. Eum quas beatae cumque eum quaerat.
+            </p>
+            <div
+              class="buttons d-flex gap-4 align-items-center justify-content-center justify-content-lg-start"
+            >
+              <a class="btn btn-danger rounded-pill px-5 py-3" href="#BookForm"
+                >Book a Table</a
+              >
+              <a
+                class="text-decoration-none text-dark fw-bold watch-button d-flex align-items-center"
+                href="#"
+                ><i class="fa-regular fa-circle-play text-danger fs-2 me-2"></i>
+                Watch Video</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-5 col-12">
+            <img class="w-100" src="./assets/imgs/banner.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+    <!-- main start -->
+    <main>
+      <!-- about start -->
+      <section id="About" class="about py-5">
+        <div class="container py-4">
+          <div class="about-header w-100 text-center">
+            <p class="text-uppercase text-muted">about us</p>
+            <h2 class="display-5">
+              Learn More <span class="text-danger">About Us</span>
+            </h2>
+          </div>
+          <div class="about-body row mt-5 justify-content-between">
+            <div class="col-lg-7 col-12 position-relative mb-4">
+              <img src="./assets/imgs/about.jpg" alt="" class="w-100 h-100" />
+              <div
+                class="fw-bold img-body bg-white position-absolute text-center py-4"
+              >
+                <p class="fs-4 p-0 m-0">Book a Table</p>
+                <p class="">
+                  <a
+                    class="fs-3 text-danger text-decoration-none"
+                    href="tel:+1 5589 55488 55"
+                    >+1 5589 55488 55</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-12 ps-lg-5 h-100">
+              <p>
+                <em>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </em>
+              </p>
+              <ul class="ps-3">
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </li>
+                <li>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate trideta
+                  storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                </li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident
+              </p>
+              <div class="video position-relative">
+                <img src="./assets/imgs/about-2.jpg" class="w-100" alt="" />
+                <div
+                  class="d-flex justify-content-center align-items-center w-100 h-100 position-absolute top-0"
+                >
+                  <div
+                    class="spinner-grow bg-transparent border border-danger border-4"
+                    role="status"
+                  ></div>
+                  <div
+                    class="rounded-circle bg-danger opacity-50 position-absolute"
+                  ></div>
+                  <div
+                    class="playIcon text-white fs-3 position-absolute bg-danger rounded-circle d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about end -->
+      <!-- information start -->
+      <section class="information py-5 bg-grey">
+        <div class="container py-4">
+          <div
+            class="d-flex align-items-center gap-4 text-center flex-column flex-lg-row"
+          >
+            <article
+              class="col-12 col-lg-4 bg-danger text-white p-4 text-start"
+            >
+              <h3 class="px-2 py-2 fs-1 fw-bold mb-4">Why Choose Yummy?</h3>
+              <p class="px-3 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+                aute irure dolor in reprehenderit Asperiores dolores sed et.
+                Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
+                optio ad corporis.
+              </p>
+              <div class="text-center">
+                <a
+                  class="text-capitalize btn btn-danger fs-6 rounded-pill px-4 py-1 position-relative"
+                  href="#"
+                  >learn more</a
+                >
+              </div>
+            </article>
+            <article class="w-100 bg-white py-5 px-4 d-flex flex-column gap-4">
+              <div
+                class="position-relative information-icon mb-3 text-danger position-relative"
+              >
+                <i class="fa-regular fa-clipboard fs-2"></i>
+                <i
+                  class="fa-solid fa-signal position-absolute fs-6 start-0 end-0"
+                ></i>
+              </div>
+              <h4 class="fs-5">Corporis voluptates officia eiusmod</h4>
+              <p class="text-muted">
+                Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                laboris nisi ut aliquip
+              </p>
+            </article>
+            <article class="w-100 bg-white py-5 px-3 d-flex flex-column gap-4">
+              <div class="information-icon mb-3 text-danger position-relative">
+                <i class="fa-regular fa-gem fs-2"></i>
+              </div>
+              <h4 class="fs-5 px-2">Ullamco laboris ladore pan</h4>
+              <p class="text-muted">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt
+              </p>
+            </article>
+            <article class="w-100 bg-white py-5 px-3 d-flex flex-column gap-4">
+              <div class="information-icon mb-3 text-danger position-relative">
+                <i class="fa-solid fa-inbox fs-2"></i>
+              </div>
+              <h4 class="fs-5">Labore consequatur incidid dolore</h4>
+              <p class="text-muted">
+                Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
+                maiores omnis facere
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- information end -->
+      <!-- counts start -->
+      <section class="counts py-5 position-relative">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 text-center">
+              <p class="display-5 fw-bold text-white">232</p>
+              <p class="text-white opacity-60 fw-bold">Clients</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 text-center">
+              <p class="display-5 fw-bold text-white">521</p>
+              <p class="text-white opacity-60 fw-bold">Projects</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 text-center">
+              <p class="display-5 fw-bold text-white">1453</p>
+              <p class="text-white opacity-60 fw-bold">Hours Of Support</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 text-center">
+              <p class="display-5 fw-bold text-white">32</p>
+              <p class="text-white opacity-60 fw-bold">Workers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- counts end -->
+      <!-- menu start -->
+      <section id="Menu" class="menu py-5">
+        <div class="container py-4" id="exTab1">
+          <div class="about-header w-100 text-center">
+            <p class="text-uppercase text-muted">OUR MENU</p>
+            <h2 class="display-5">
+              Check Our <span class="text-danger">Yummy Menu</span>
+            </h2>
+          </div>
+          <ul
+            type="none"
+            class="d-flex gap-4 w-100 justify-content-center pt-5 pb-4"
+          >
+            <li class="border-bottom border-2 pb-2">
+              <a class="fs-5 text-decoration-none text-muted active" href="#1a" data-toggle="tab"
+                >Starters</a
+              >
+            </li>
+            <li class="border-bottom border-2 pb-2">
+              <a class="fs-5 text-decoration-none text-muted" href="#2a" data-toggle="tab"
+                >Breakfast</a
+              >
+            </li>
+            <li class="border-bottom border-2 pb-2">
+              <a class="fs-5 text-decoration-none text-muted" href="#3a" data-toggle="tab">Lunch</a>
+            </li>
+            <li class="border-bottom border-2 pb-2 me-4">
+              <a class="fs-5 text-decoration-none text-muted" href="#4a" data-toggle="tab"
+                >Dinner</a
+              >
+            </li>
+          </ul>
+          <div class="about-header w-100 text-center">
+            <p class="text-uppercase text-muted my-0">MENU</p>
+            <div class="tab-content clearfix">
+              <div class="tab-pane active" id="1a">
+                <h3 class="text-danger fs-2 fw-bold">Starters</h3>
+              </div>
+              <div class="tab-pane" id="2a">
+                <h3 class="text-danger fs-2 fw-bold">Breakfast</h3>
+              </div>
+              <div class="tab-pane" id="3a">
+                <h3 class="text-danger fs-2 fw-bold">Lunch</h3>
+              </div>
+              <div class="tab-pane" id="4a">
+                <h3 class="text-danger fs-2 fw-bold">Dinner</h3>
+              </div>
+              
+            </div>
+            
+          </div>
+          <div class="row gap-1 justify-content-between mt-5">
+            <article class="col-lg-3 col-12 text-center card border-0">
+              <a
+                href="./assets/imgs/menu-item-1.png"
+                class="grouped_elements w-100"
+                data-fancybox="menu"
+              >
+                <img
+                  src="./assets/imgs/menu-item-1.png"
+                  alt="menu item"
+                  class="w-100"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="mt-4 card-title">Magnam Tiste</h4>
+                <p class="text-muted mb-0 card-text">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="text-danger fs-4 fw-bold card-text">$5.95</p>
+              </div>
+            </article>
+            <article class="col-lg-3 col-12 text-center card border-0">
+              <a
+                href="./assets/imgs/menu-item-2.png"
+                class="grouped_elements w-100"
+                data-fancybox="menu"
+              >
+                <img
+                  src="./assets/imgs/menu-item-2.png"
+                  alt="menu item"
+                  class="w-100"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="mt-4 card-title">Aut Luia</h4>
+                <p class="text-muted mb-0 card-text">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="text-danger fs-4 fw-bold card-text">$14.95</p>
+              </div>
+            </article>
+            <article class="col-lg-3 col-12 text-center card border-0">
+              <a
+                href="./assets/imgs/menu-item-3.png"
+                class="grouped_elements w-100"
+                data-fancybox="menu"
+              >
+                <img
+                  src="./assets/imgs/menu-item-3.png"
+                  alt="menu item"
+                  class="w-100"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="mt-4 card-title">Est Eligendi</h4>
+                <p class="text-muted mb-0 card-text">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="text-danger fs-4 fw-bold card-text">$8.95</p>
+              </div>
+            </article>
+            <article class="col-lg-3 col-12 text-center card border-0">
+              <a
+                href="./assets/imgs/menu-item-4.png"
+                class="grouped_elements w-100"
+                data-fancybox="menu"
+              >
+                <img
+                  src="./assets/imgs/menu-item-4.png"
+                  alt="menu item"
+                  class="w-100"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="mt-4 card-title">Eos Luibusdam</h4>
+                <p class="text-muted mb-0 card-text">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="text-danger fs-4 fw-bold card-text">$12.95</p>
+              </div>
+            </article>
+            <article class="col-lg-3 col-12 text-center card border-0">
+              <a
+                href="./assets/imgs/menu-item-5.png"
+                class="grouped_elements w-100"
+                data-fancybox="menu"
+              >
+                <img
+                  src="./assets/imgs/menu-item-5.png"
+                  alt="menu item"
+                  class="w-100"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="mt-4 card-title">Eos Luibusdam</h4>
+                <p class="text-muted mb-0 card-text">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="text-danger fs-4 fw-bold card-text">$12.95</p>
+              </div>
+            </article>
+            <article class="col-lg-3 col-12 text-center card border-0">
+              <a
+                href="./assets/imgs/menu-item-6.png"
+                class="grouped_elements w-100"
+                data-fancybox="menu"
+              >
+                <img
+                  src="./assets/imgs/menu-item-6.png"
+                  alt="menu item"
+                  class="w-100"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="mt-4 card-title">Laboriosam Direva</h4>
+                <p class="text-muted mb-0 card-text">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="text-danger fs-4 fw-bold card-text">$9.95</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- menu end -->
+      <!-- testimonials start -->
+      <section class="testimonials py-5 bg-grey">
+        <div class="container py-4 position-relative">
+          <div class="about-header w-100 text-center">
+            <p class="text-uppercase text-muted">TESTIMONIALS</p>
+            <h2 class="display-5">
+              What Are They <span class="text-danger">Saying About Us</span>
+            </h2>
+          </div>
+          <!-- Carousel -->
+          <div
+            id="demo"
+            class="carousel slide mt-5 pt-4"
+            data-bs-ride="carousel"
+          >
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators position-absolute top-100">
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="0"
+                class="active bg-secondary rounded-circle"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="1"
+                class="bg-secondary rounded-circle"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="2"
+                class="bg-secondary rounded-circle"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="3"
+                class="bg-secondary rounded-circle"
+              ></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <article class="row justify-content-center">
+                  <div
+                    class="col-lg-7 col-12 ps-4 border-start border-danger border-2"
+                  >
+                    <p class="description">
+                      <i
+                        class="fa-solid fa-quote-left text-danger fs-4 me-2"
+                      ></i>
+                      <em>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Fugit officiis aperiam atque molestias corrupti in
+                        sunt sed enim repellendus, omnis ad maxime ratione quod
+                        id possimus ipsum impedit quaerat nemo praesentium..
+                      </em>
+                      <i
+                        class="fa-solid fa-quote-right text-danger fs-4 ms-2"
+                      ></i>
+                    </p>
+                    <h5 class="fs-5 fw-bold">Saul Goodman</h5>
+                    <p class="text-muted">Ceo & Founder</p>
+                    <p class="text-warning mb-0">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="col-lg-2 col-12">
+                    <img
+                      src="./assets/imgs/testimonials-1.jpg"
+                      alt=""
+                      class="w-100 rounded-circle border border-white border-2"
+                    />
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item">
+                <article class="row justify-content-center">
+                  <div
+                    class="col-lg-7 col-12 ps-4 border-start border-danger border-2"
+                  >
+                    <p class="description">
+                      <i
+                        class="fa-solid fa-quote-left text-danger fs-4 me-2"
+                      ></i>
+                      <em>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Fugit officiis aperiam atque molestias corrupti in
+                        sunt sed enim repellendus, omnis ad maxime ratione quod
+                        id possimus ipsum impedit quaerat nemo praesentium..
+                      </em>
+                      <i
+                        class="fa-solid fa-quote-right text-danger fs-4 ms-2"
+                      ></i>
+                    </p>
+                    <h5 class="fs-5 fw-bold">Sara Willson</h5>
+                    <p class="text-muted">Designer</p>
+                    <p class="text-warning mb-0">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="col-lg-2 col-12">
+                    <img
+                      src="./assets/imgs/testimonials-2.jpg"
+                      alt=""
+                      class="w-100 rounded-circle border border-white border-2"
+                    />
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item">
+                <article class="row justify-content-center">
+                  <div
+                    class="col-lg-7 col-12 ps-4 border-start border-danger border-2"
+                  >
+                    <p class="description">
+                      <i
+                        class="fa-solid fa-quote-left text-danger fs-4 me-2"
+                      ></i>
+                      <em>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Fugit officiis aperiam atque molestias corrupti in
+                        sunt sed enim repellendus, omnis ad maxime ratione quod
+                        id possimus ipsum impedit quaerat nemo praesentium..
+                      </em>
+                      <i
+                        class="fa-solid fa-quote-right text-danger fs-4 ms-2"
+                      ></i>
+                    </p>
+                    <h5 class="fs-5 fw-bold">Jena Karlis</h5>
+                    <p class="text-muted">Store Owner</p>
+                    <p class="text-warning mb-0">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="col-lg-2 col-12">
+                    <img
+                      src="./assets/imgs/testimonials-3.jpg"
+                      alt=""
+                      class="w-100 rounded-circle border border-white border-2"
+                    />
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item">
+                <article class="row justify-content-center">
+                  <div
+                    class="col-lg-7 col-12 ps-4 border-start border-danger border-2"
+                  >
+                    <p class="description">
+                      <i
+                        class="fa-solid fa-quote-left text-danger fs-4 me-2"
+                      ></i>
+                      <em>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Fugit officiis aperiam atque molestias corrupti in
+                        sunt sed enim repellendus, omnis ad maxime ratione quod
+                        id possimus ipsum impedit quaerat nemo praesentium..
+                      </em>
+                      <i
+                        class="fa-solid fa-quote-right text-danger fs-4 ms-2"
+                      ></i>
+                    </p>
+                    <h5 class="fs-5 fw-bold">Jhon Larson</h5>
+                    <p class="text-muted">Entrepreneur</p>
+                    <p class="text-warning mb-0">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="col-lg-2 col-12">
+                    <img
+                      src="./assets/imgs/testimonials-4.jpg"
+                      alt=""
+                      class="w-100 rounded-circle border border-white border-2"
+                    />
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonials end -->
+      <!-- events start -->
+      <section id="Events" class="events py-5">
+        <div class="container-fluid px-0 py-4">
+          <div class="about-header w-100 text-center">
+            <p class="text-uppercase text-muted">EVENTS</p>
+            <h2 class="display-5">
+              Share <span class="text-danger">Your Moments</span> In Our
+              Restaurant
+            </h2>
+          </div>
+          <div class="swiper mySwiper container-fluid pt-4 w-100">
+            <div class="swiper-wrapper w-100">
+              <div class="swiper-slide position-relative">
+                <article class="w-100 h-100 card border-0">
+                  <img
+                    src="./assets/imgs/events-1.jpg"
+                    class="w-100 h-100"
+                    alt="event image"
+                  />
+                  <div
+                    class="card-body position-absolute text-white bottom-0 px-4"
+                  >
+                    <h3 class="fw-bold fs-4">Birthday Parties</h3>
+                    <p
+                      class="fw-bold fs-2 border-bottom border-danger border-2 d-inline-block"
+                    >
+                      $499
+                    </p>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos repellendus delectus enim quo praesentium fuga
+                      commodi. Inventore, nam voluptatem vitae debitis nostrum
+                      deserunt, repudiandae non est, harum quia rem accusantium?
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide position-relative">
+                <article class="w-100 h-100 card border-0">
+                  <img
+                    src="./assets/imgs/events-2.jpg"
+                    class="w-100 h-100"
+                    alt="event image"
+                  />
+                  <div
+                    class="card-body position-absolute text-white bottom-0 px-4"
+                  >
+                    <h3 class="fw-bold fs-4">Custom Parties</h3>
+                    <p
+                      class="fw-bold fs-2 border-bottom border-danger border-2 d-inline-block"
+                    >
+                      $99
+                    </p>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos repellendus delectus enim quo praesentium fuga
+                      commodi. Inventore, nam voluptatem vitae debitis nostrum
+                      deserunt, repudiandae non est, harum quia rem accusantium?
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide position-relative">
+                <article class="w-100 h-100 card border-0">
+                  <img
+                    src="./assets/imgs/events-3.jpg"
+                    class="w-100 h-100"
+                    alt="event image"
+                  />
+                  <div
+                    class="card-body position-absolute text-white bottom-0 px-4"
+                  >
+                    <h3 class="fw-bold fs-4">Private Parties</h3>
+                    <p
+                      class="fw-bold fs-2 border-bottom border-danger border-2 d-inline-block"
+                    >
+                      $289
+                    </p>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos repellendus delectus enim quo praesentium fuga
+                      commodi. Inventore, nam voluptatem vitae debitis nostrum
+                      deserunt, repudiandae non est, harum quia rem accusantium?
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide position-relative">
+                <article class="w-100 h-100 card border-0">
+                  <img
+                    src="./assets/imgs/events-1.jpg"
+                    class="w-100 h-100"
+                    alt="event image"
+                  />
+                  <div
+                    class="card-body position-absolute text-white bottom-0 px-4"
+                  >
+                    <h3 class="fw-bold fs-4">Birthday Parties</h3>
+                    <p
+                      class="fw-bold fs-2 border-bottom border-danger border-2 d-inline-block"
+                    >
+                      $499
+                    </p>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos repellendus delectus enim quo praesentium fuga
+                      commodi. Inventore, nam voluptatem vitae debitis nostrum
+                      deserunt, repudiandae non est, harum quia rem accusantium?
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide position-relative">
+                <article class="w-100 h-100 card border-0">
+                  <img
+                    src="./assets/imgs/events-2.jpg"
+                    class="w-100 h-100"
+                    alt="event image"
+                  />
+                  <div
+                    class="card-body position-absolute text-white bottom-0 px-4"
+                  >
+                    <h3 class="fw-bold fs-4">Custom Parties</h3>
+                    <p
+                      class="fw-bold fs-2 border-bottom border-danger border-2 d-inline-block"
+                    >
+                      $99
+                    </p>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos repellendus delectus enim quo praesentium fuga
+                      commodi. Inventore, nam voluptatem vitae debitis nostrum
+                      deserunt, repudiandae non est, harum quia rem accusantium?
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide position-relative">
+                <article class="w-100 h-100 card border-0">
+                  <img
+                    src="./assets/imgs/events-3.jpg"
+                    class="w-100 h-100"
+                    alt="event image"
+                  />
+                  <div
+                    class="card-body position-absolute text-white bottom-0 px-4"
+                  >
+                    <h3 class="fw-bold fs-4">Private Parties</h3>
+                    <p
+                      class="fw-bold fs-2 border-bottom border-danger border-2 d-inline-block"
+                    >
+                      $289
+                    </p>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos repellendus delectus enim quo praesentium fuga
+                      commodi. Inventore, nam voluptatem vitae debitis nostrum
+                      deserunt, repudiandae non est, harum quia rem accusantium?
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div
+              class="swiper-pagination position-relative bottom-0 mt-4"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- events end -->
+      <!-- chefs start -->
+      <section id="Chefs" class="chefs py-5 bg-grey">
+        <div class="container py-4">
+          <div class="about-header w-100 text-center">
+            <p class="text-uppercase text-muted">CHEFS</p>
+            <h2 class="display-5">
+              Our <span class="text-danger">Proffesional</span> Chefs
+            </h2>
+          </div>
+          <div class="row gy-4 mt-5">
+            <article
+              class="col-lg-4 col-md-6 col-12 d-flex card border-0 px-3 bg-transparent animated-chef"
+            >
+              <div class="position-relative overflow-hidden rounded-top">
+                <div>
+                  <img
+                    src="./assets/imgs/chefs-1.jpg"
+                    class="card-image w-100"
+                    alt="Chef image"
+                  />
+                </div>
+                <svg
+                  class="position-absolute bottom-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1440 320"
+                >
+                  <path
+                    fill="#fff"
+                    fill-opacity="1"
+                    d="M0,160L34.3,170.7C68.6,181,137,203,206,202.7C274.3,203,343,181,411,154.7C480,128,549,96,617,112C685.7,128,754,192,823,213.3C891.4,235,960,213,1029,197.3C1097.1,181,1166,171,1234,170.7C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+                  ></path>
+                </svg>
+                <div
+                  class="chef-icons opacity-50 rounded-3 bg-white fs-4 position-absolute top-0 end-0 mt-4 me-2"
+                >
+                  <ul type="none" class="p-2 m-0">
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body text-center pb-4 bg-white rounded-bottom">
+                <h3 class="card-title fs-5 fw-bold">Walter White</h3>
+                <p class="card-text text-muted">Master Chef</p>
+                <p class="card-text pb-3 px-1">
+                  <em>
+                    Velit aut quia fugit et et. Dolorum ea voluptate vel tempore
+                    tenetur ipsa quae aut. Ipsum exercitationem iure minima enim
+                    corporis et voluptate.
+                  </em>
+                </p>
+              </div>
+            </article>
+            <article
+              class="col-lg-4 col-md-6 col-12 card border-0 px-3 bg-transparent animated-chef"
+            >
+              <div class="position-relative overflow-hidden rounded-top">
+                <div>
+                  <img
+                    src="./assets/imgs/chefs-2.jpg"
+                    class="card-image w-100"
+                    alt="Chef image"
+                  />
+                </div>
+                <svg
+                  class="position-absolute bottom-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1440 320"
+                >
+                  <path
+                    fill="#fff"
+                    fill-opacity="1"
+                    d="M0,160L34.3,170.7C68.6,181,137,203,206,202.7C274.3,203,343,181,411,154.7C480,128,549,96,617,112C685.7,128,754,192,823,213.3C891.4,235,960,213,1029,197.3C1097.1,181,1166,171,1234,170.7C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+                  ></path>
+                </svg>
+                <div
+                  class="chef-icons opacity-50 rounded-3 bg-white fs-4 position-absolute top-0 end-0 mt-4 me-2"
+                >
+                  <ul type="none" class="p-2 m-0">
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body text-center pb-4 bg-white rounded-bottom">
+                <h3 class="card-title fs-5 fw-bold">Sarah Jhonson</h3>
+                <p class="card-text text-muted">Patissier</p>
+                <p class="card-text pb-3 px-1">
+                  <em>
+                    Quo esse repellendus quia id. Est eum et accusantium
+                    pariatur fugit nihil minima suscipit corporis. Voluptate sed
+                    quas reiciendis animi neque sapiente.
+                  </em>
+                </p>
+              </div>
+            </article>
+            <article
+              class="col-lg-4 col-md-6 col-12 d-flex card border-0 px-3 bg-transparent animated-chef"
+            >
+              <div class="position-relative overflow-hidden rounded-top">
+                <div>
+                  <img
+                    src="./assets/imgs/chefs-3.jpg"
+                    class="card-image w-100"
+                    alt="Chef image"
+                  />
+                </div>
+                <svg
+                  class="position-absolute bottom-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1440 320"
+                >
+                  <path
+                    fill="#fff"
+                    fill-opacity="1"
+                    d="M0,160L34.3,170.7C68.6,181,137,203,206,202.7C274.3,203,343,181,411,154.7C480,128,549,96,617,112C685.7,128,754,192,823,213.3C891.4,235,960,213,1029,197.3C1097.1,181,1166,171,1234,170.7C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+                  ></path>
+                </svg>
+                <div
+                  class="chef-icons opacity-50 rounded-3 bg-white fs-4 position-absolute top-0 end-0 mt-4 me-2"
+                >
+                  <ul type="none" class="p-2 m-0">
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body text-center pb-4 bg-white rounded-bottom">
+                <h3 class="card-title fs-5 fw-bold">William Anderson</h3>
+                <p class="card-text text-muted">Cook</p>
+                <p class="card-text pb-3 px-1">
+                  <em>
+                    Vero omnis enim consequatur. Voluptas consectetur unde qui
+                    molestiae deserunt. Voluptates enim aut architecto porro
+                    aspernatur molestiae modi.
+                  </em>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- chefs end -->
+      <!-- book-form start -->
+      <section id="BookForm" class="book-form py-5">
+        <div class="container pu-4">
+          <div class="about-header w-100 text-center">
+            <p class="text-uppercase text-muted">BOOK A TABLE</p>
+            <h2 class="display-5">
+              Book <span class="text-danger">Your Stay</span> With Us
+            </h2>
+          </div>
+          <div class="row bg-grey mt-5">
+            <div class="col-lg-4 col-12 p-0">
+              <img
+                src="./assets/imgs/reservation.jpg"
+                class="w-100"
+                alt="reservation image"
+              />
+            </div>
+            <div class="col-lg-8 col-12 d-flex align-items-center">
+              <form class="p-4">
+                <div class="row gy-3">
+                  <div class="form-group col-lg-4 col-md-6 col-12">
+                    <label class="d-none" for="name">Name:</label>
+                    <input
+                      type="text"
+                      class="form-control p-2"
+                      id="name"
+                      placeholder="Enter your name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-lg-4 col-md-6 col-12">
+                    <label class="d-none" for="email">Email:</label>
+                    <input
+                      type="email"
+                      class="form-control p-2"
+                      id="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-lg-4 col-md-6 col-12">
+                    <label class="d-none" for="phone">Phone Number:</label>
+                    <input
+                      type="tel"
+                      class="form-control p-2"
+                      id="phone"
+                      placeholder="Enter your phone number"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-lg-4 col-md-6 col-12">
+                    <label class="d-none" for="date">Date:</label>
+                    <input
+                      type="date"
+                      class="form-control p-2"
+                      id="date"
+                      required
+                      placeholder="Date"
+                    />
+                  </div>
+                  <div class="form-group col-lg-4 col-md-6 col-12">
+                    <label class="d-none" for="time">Time:</label>
+                    <input
+                      type="time"
+                      class="form-control p-2"
+                      id="time"
+                      required
+                      placeholder="Time"
+                    />
+                  </div>
+                  <div class="form-group col-lg-4 col-md-6 col-12">
+                    <label class="d-none" for="count">Number of People:</label>
+                    <input
+                      type="number"
+                      class="form-control p-2"
+                      id="count"
+                      min="1"
+                      placeholder="# of People"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label class="d-none" for="message">Message:</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="w-100 text-center mt-3">
+                  <button
+                    type="submit"
+                    class="btn btn-danger fs-6 px-5 py-3 rounded-pill"
+                  >
+                    Book a Table
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- book-form end -->
+      <!-- gallery start -->
+      <section id="Gallery" class="gallery py-5 bg-grey">
+        <div class="container py-4">
+          <div class="about-header w-100 text-center">
+            <p class="text-uppercase text-muted">GALLERY</p>
+            <h2 class="display-5">
+              Check <span class="text-danger">Our Gallery</span> With Us
+            </h2>
+          </div>
+          <div class="swiper gallery-swipper fancy-gallery mt-5 pt-5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a
+                  href="./assets/imgs/gallery-1.jpg"
+                  class="grouped_elements w-100"
+                  data-fancybox="images"
+                >
+                  <img
+                    src="./assets/imgs/gallery-1.jpg"
+                    class="w-100"
+                    alt="gallery image"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="./assets/imgs/gallery-2.jpg"
+                  class="grouped_elements w-100"
+                  data-fancybox="images"
+                >
+                  <img
+                    src="./assets/imgs/gallery-2.jpg"
+                    class="w-100"
+                    alt="gallery image"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="./assets/imgs/gallery-3.jpg"
+                  class="grouped_elements w-100"
+                  data-fancybox="images"
+                >
+                  <img
+                    src="./assets/imgs/gallery-3.jpg"
+                    class="w-100"
+                    alt="gallery image"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="./assets/imgs/gallery-4.jpg"
+                  class="grouped_elements w-100"
+                  data-fancybox="images"
+                >
+                  <img
+                    src="./assets/imgs/gallery-4.jpg"
+                    class="w-100"
+                    alt="gallery image"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="./assets/imgs/gallery-5.jpg"
+                  class="grouped_elements w-100"
+                  data-fancybox="images"
+                >
+                  <img
+                    src="./assets/imgs/gallery-5.jpg"
+                    class="w-100"
+                    alt="gallery image"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="./assets/imgs/gallery-6.jpg"
+                  class="grouped_elements w-100"
+                  data-fancybox="images"
+                >
+                  <img
+                    src="./assets/imgs/gallery-6.jpg"
+                    class="w-100"
+                    alt="gallery image"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="./assets/imgs/gallery-7.jpg"
+                  class="grouped_elements w-100"
+                  data-fancybox="images"
+                >
+                  <img
+                    src="./assets/imgs/gallery-7.jpg"
+                    class="w-100"
+                    alt="gallery image"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="./assets/imgs/gallery-8.jpg"
+                  class="grouped_elements w-100"
+                  data-fancybox="images"
+                >
+                  <img
+                    src="./assets/imgs/gallery-8.jpg"
+                    class="w-100"
+                    alt="gallery image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="swiper-pagination position-relative bottom-0 mt-5"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- gallery end -->
+      <!-- contact start -->
+      <section id="Contact" class="contact py-5">
+        <div class="container py-4">
+          <div class="about-header w-100 text-center">
+            <p class="text-uppercase text-muted">CONTACT</p>
+            <h2 class="display-5">
+              Need Help? <span class="text-danger">Contact Us</span>
+            </h2>
+          </div>
+          <div class="contact-body mt-5">
+            <div class="w-100">
+              <iframe
+                width="100%"
+                height="400"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Azerbaijan,%20Baku+(Yummy)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ><a href="https://www.maps.ie/distance-area-calculator.html"
+                  >measure distance on map</a
+                ></iframe
+              >
+            </div>
+            <div class="row w-100 ms-0 gy-4 mt-1">
+              <div class="col-lg-6 col-12 pe-4">
+                <div class="row bg-grey p-4">
+                  <div class="col-2 text-center">
+                    <i
+                      class="fa-regular fa-map fs-4 p-3 bg-danger text-white rounded-circle"
+                    ></i>
+                  </div>
+                  <div class="col-10 ps-0">
+                    <h4 class="fs-5 fw-bold text-secondary">Our Address</h4>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 ps-4">
+                <div class="row bg-grey p-4">
+                  <div class="col-2 text-center">
+                    <i
+                      class="fa-regular fa-envelope fs-4 p-3 bg-danger text-white rounded-circle"
+                    ></i>
+                  </div>
+                  <div class="col-10 ps-0">
+                    <h4 class="fs-5 fw-bold text-secondary">Email Us</h4>
+                    <p>
+                      <a
+                        class="text-decoration-none text-dark"
+                        href="mailto:contact@example.com"
+                        >contact@example.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 pe-4">
+                <div class="row bg-grey p-4">
+                  <div class="col-2 text-center">
+                    <i
+                      class="fa-solid fa-phone fs-4 p-3 bg-danger text-white rounded-circle"
+                    ></i>
+                  </div>
+                  <div class="col-10 ps-0">
+                    <h4 class="fs-5 fw-bold text-secondary">Call Us</h4>
+                    <p>
+                      <a
+                        class="text-decoration-none text-dark"
+                        href="tel:+1 5589 55488 55"
+                        >+1 5589 55488 55</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 ps-4">
+                <div class="row bg-grey p-4">
+                  <div class="col-2 text-center">
+                    <i
+                      class="fa-solid fa-share-nodes fs-4 p-3 bg-danger text-white rounded-circle"
+                    ></i>
+                  </div>
+                  <div class="col-10 ps-0">
+                    <h4 class="fs-5 fw-bold text-secondary">Opening Hours</h4>
+                    <p>
+                      <strong>Mon-Sat:</strong> 11AM - 23PM;
+                      <strong>Sunday:</strong> Closed
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="mt-4 p-4 shadow">
+              <div class="row gy-3">
+                <div class="form-group col-md-6 col-12">
+                  <label class="d-none" for="name">Name:</label>
+                  <input
+                    type="text"
+                    class="form-control p-2"
+                    id="user-name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-6 col-12">
+                  <label class="d-none" for="email">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control p-2"
+                    id="user-email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group my-3">
+                <label class="d-none" for="subject">Subject</label>
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="subject"
+                  min="1"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="d-none" for="message">Message:</label>
+                <textarea
+                  class="form-control"
+                  id="user-message"
+                  rows="5"
+                  placeholder="Enter your message"
+                  required
+                ></textarea>
+              </div>
+              <div class="w-100 text-center mt-3">
+                <button
+                  type="submit"
+                  class="btn btn-danger fs-6 px-5 py-2 rounded-pill"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- contact end -->
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer class="bg-dark py-5 text-white">
+      <div class="container py-4">
+        <div class="row gap-5 justify-content-between mb-4">
+          <div class="row col-lg-3 col-md-6 col-12">
+            <div class="col-1 col-xl-2">
+              <i class="fa-solid fa-location-dot fs-4"></i>
+            </div>
+            <div class="col-11 col-xl-10 text-start">
+              <h5 class="fs-6 fw-bold mb-3">Address</h5>
+              <p class="m-0">A108 Adam Street</p>
+              <p>New York, NY 535022 - US</p>
+            </div>
+          </div>
+          <div class="row col-lg-3 col-md-6 col-12">
+            <div class="col-1 col-xl-2">
+              <i class="fa-solid fa-phone fs-4"></i>
+            </div>
+            <div class="col-11 col-xl-10 text-start">
+              <h5 class="fs-6 fw-bold mb-3">Reservations</h5>
+              <p class="m-0">
+                <strong>Phone:</strong>
+                <a
+                  class="text-white text-decoration-none"
+                  href="tel:+1 5589 55488 55"
+                  >+1 5589 55488 55</a
+                >
+              </p>
+              <p>
+                <strong>Email:</strong>
+                <a
+                  class="text-white text-decoration-none"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="row col-lg-3 col-md-6 col-12">
+            <div class="col-1 col-xl-2">
+              <i class="fa-regular fa-clock fs-4"></i>
+            </div>
+            <div class="col-11 col-xl-10 text-start">
+              <h5 class="fs-6 fw-bold mb-3">Opening Hours</h5>
+              <p class="m-0"><strong>Mon-Sat: 11AM</strong> - 23PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-5 col-12">
+            <div class="text-start">
+              <h5 class="fs-6 fw-bold mb-3">Follow Us</h5>
+              <ul type="none" class="p-0 mt-4 d-flex gap-2">
+                <li>
+                  <a
+                    class="text-muted p-2 border border-secondary border-1 rounded-circle"
+                    href="#"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted p-2 border border-secondary border-1 rounded-circle"
+                    href="#"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted p-2 border border-secondary border-1 rounded-circle"
+                    href="#"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted p-2 border border-secondary border-1 rounded-circle"
+                    href="#"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="copy-write text-center mt-4">
+          <p class="mb-0">
+            © Copyright <strong>Yummy.</strong> All Rights Reserved <br />
+            <span
+              >Designed by
+              <a class="text-decoration-none text-white" href="#"
+                >BootstrapMade</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c5b29734f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script
+      type="text/javascript"
+      src="/fancybox/jquery.fancybox-1.3.4.pack.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/fancybox/jquery.mousewheel-3.0.4.pack.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/fancybox/jquery.easing-1.4.pack.js"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
