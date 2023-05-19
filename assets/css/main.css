@@ -1,6 +1,6 @@
 /* header start  */
 header {
-  z-index: 1000;
+  z-index: 999;
 }
 header h1,
 li {
@@ -52,7 +52,7 @@ li {
 @keyframes Spinner {
   0% {
     opacity: 1;
-    z-index: 100;
+    z-index: 1000;
   }
   100% {
     opacity: 0;
